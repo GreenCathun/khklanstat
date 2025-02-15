@@ -1,4 +1,10 @@
 javascript:
+if (typeof jQuery == 'undefined') {
+    var script = document.createElement('script');
+    script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
+    script.type = "text/javascript";
+    document.getElementsByTagName('head')[0].appendChild(script);
+}
 console.log("teszt_19:51");
 var gear = "https://raw.githubusercontent.com/oreg-kh/Unit-and-building-simulator/master/gear.png";
 let token = atob("ZjRiNDIzZWE4MzgxMDJmZmNkMTdmY2M4MDdmY2Y1MTkxZjlkN2I5Yw==");
